@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio de Jose Jimenez</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;700"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            // Define los colores personalizados para un uso más consistente y legible
+            colors: {
+              'fondo-principal': '#181221',
+              'borde-oscuro': '#332745',
+              'texto-claro': '#FFFFFF',
+              'texto-secundario': '#AA97C4',
+              'color-primario': '#6020BA',
+            },
+            // Define las fuentes para una fácil referencia
+            fontFamily: {
+              sans: ['Noto Sans', 'sans-serif'],
+              grotesk: ['Space Grotesk', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-fondo-principal text-texto-claro font-grotesk overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex flex-col items-center justify-between whitespace-nowrap border-b border-solid border-b-borde-oscuro px-4 py-3 sm:flex-row sm:px-10"
+        >
+          <div class="flex items-center gap-4 text-texto-claro mb-4 sm:mb-0">
+            <div class="size-6 sm:size-8">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h1 class="text-lg font-bold leading-tight tracking-[-0.015em] sm:text-xl">Jose Jimenez</h1>
+          </div>
+          <nav class="flex flex-1 justify-center gap-6 sm:justify-end sm:gap-8 mt-4 sm:mt-0">
+            <div class="hidden sm:flex items-center gap-9">
+              <a class="text-sm font-medium leading-normal hover:text-color-primario transition-colors" href="#sobre-mi">Sobre mí</a>
+              <a class="text-sm font-medium leading-normal hover:text-color-primario transition-colors" href="#proyectos">Proyectos</a>
+              <a class="text-sm font-medium leading-normal hover:text-color-primario transition-colors" href="#habilidades">Habilidades</a>
+              <a class="text-sm font-medium leading-normal hover:text-color-primario transition-colors" href="#contacto">Contacto</a>
+            </div>
+            <a
+            href="https://drive.google.com/file/d/1BP73MZhcVemJzpcH3QS3UwF1lM95WUrJ/view?usp=sharing"
+            download="Jose_Jimenez_Curriculum.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-borde-oscuro text-sm font-bold leading-normal tracking-[0.015em] hover:bg-color-primario transition-colors"
+            aria-label="Descargar Currículum de Jose Jimenez"
+          >
+            <span class="truncate">Descargar Currículum</span>
+          </a>
+            <button class="sm:hidden flex items-center justify-center size-10 bg-borde-oscuro rounded-full" aria-label="Abrir menú">
+              <svg class="size-6 text-texto-claro" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </nav>
+        </header>
+
+        <main class="px-4 py-5 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <section id="inicio" class="@container mb-8">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[300px] flex-col gap-4 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-8 @[480px]:px-10 sm:min-h-[400px] md:min-h-[480px]"
+                  style='background-image: linear-gradient(rgba(128, 40, 40, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://i.ibb.co/xKGKxkS5/111.png");'
+                  role="img"
+                  aria-label="Banner con imagen de perfil de Jose Jimenez"
+                >
+                <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-texto-claro text-3xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl"
+                    >
+                      Jose Jimenez
+                    </h1>
+                    <p class="text-texto-claro text-base font-normal leading-normal @[480px]:text-lg">Ingeniero de Software</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-color-primario text-texto-claro text-sm font-bold leading-normal tracking-[0.015em] @[480px]:h-12 @[480px]:px-5 @[480px]:text-base hover:opacity-80 transition-opacity"
+                    aria-label="Ver Proyectos"
+                  >
+                    <span class="truncate">Ver Proyectos</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <hr class="border-borde-oscuro my-8" />
+
+            <section id="sobre-mi" class="px-4 pb-3 pt-5 sm:px-0">
+              <h2 class="text-texto-claro text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Sobre mí</h2>
+              <p class="text-texto-claro text-base font-normal leading-relaxed">
+                 Estudiante de Ingeniería en Informática con formación técnica y
+                  certificaciones en programación, arquitectura y calidad de
+                  software. Tengo experiencia en diseño de aplicaciones web,
+                  gestión de bases de datos SQL Server y análisis de
+                  requerimientos, combinando teoría con práctica en proyectos
+                  reales. Destaco en metodologías ágiles como Scrum, uso de Git y
+                  mejora continua. Poseo certificación internacional en inglés
+                  intermedio alto, facilitando la colaboración en contextos globales.
+              </p>
+            </section>
+
+            <hr class="border-borde-oscuro my-8" />
+
+            <section id="proyectos" class="px-4 pb-3 pt-5 sm:px-0">
+              <h2 class="text-texto-claro text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Proyectos</h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 sm:p-0">
+
+                <a href="https://josejimenez0607.github.io/TROPEZON-NEW/" target="_blank" rel="noopener noreferrer"
+                  class="flex flex-col gap-3 pb-3 bg-borde-oscuro rounded-xl p-4 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg group-hover:opacity-90 transition-opacity"
+                    style='background-image: url("https://i.ibb.co/03H8DpY/logo.png");'
+                    role="img"
+                    aria-label="Imagen del Proyecto Tropezon"
+                  ></div>
+                  <div>
+                    <h3 class="text-texto-claro text-lg font-medium leading-normal mb-1">Proyecto Tropezon</h3>
+                    <p class="text-texto-secundario text-sm font-normal leading-normal">Un Noticiario Autónomo de la comuna de Pudahuel y alrededores. Página Ganadora de Hackeathon 2025 DuocUc Sede Maipú.</p>
+                  </div>
+                </a>
+
+                <a href="https://ejemplo.com/proyecto-condomiapp" target="_blank" rel="noopener noreferrer"
+                  class="flex flex-col gap-3 pb-3 bg-borde-oscuro rounded-xl p-4 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg group-hover:opacity-90 transition-opacity"
+                    style='background-image: url("https://i.ibb.co/Y4Phk2Rq/ueg.png");'
+                    role="img"
+                    aria-label="Imagen del Proyecto CondoMiApp"
+                  ></div>
+                  <div>
+                    <h3 class="text-texto-claro text-lg font-medium leading-normal mb-1">Proyecto CondoMiApp - (En Desarollo)</h3>
+                    <p class="text-texto-secundario text-sm font-normal leading-normal">Una herramienta de Gestión de datos para visualizar e interpretar información para la administración de los condominios de tipo casa o departamento (En Desarrollo).</p>
+                  </div>
+                </a>
+
+                <a href="https://ejemplo.com/proyecto-tictacjoe" target="_blank" rel="noopener noreferrer"
+                  class="flex flex-col gap-3 pb-3 bg-borde-oscuro rounded-xl p-4 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg group-hover:opacity-90 transition-opacity"
+                    style='background-image: url("https://i.ibb.co/sdhYzwsL/Gemini-Generated-Image-ic99bqic99bqic99.png");'
+                    role="img"
+                    aria-label="Imagen del Proyecto TicTacJoe"
+                  ></div>
+                  <div>
+                    <h3 class="text-texto-claro text-lg font-medium leading-normal mb-1">Proyecto TicTacJoe</h3>
+                    <p class="text-texto-secundario text-sm font-normal leading-normal">Famoso Juego El Gato o más conocido internacionalmente como Tic Tac Toe.</p>
+                  </div>
+                </a>
+
+              </div>
+            </section>
+            <hr class="border-borde-oscuro my-8" />
+
+            <section id="habilidades" class="px-4 pb-3 pt-5 sm:px-0">
+              <h2 class="text-texto-claro text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Habilidades</h2>
+              <div class="flex gap-3 p-3 flex-wrap justify-center sm:justify-start">
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Python</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">JavaScript</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">React</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Node.js</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">SQL</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Angular</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Django</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Git</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">HTML</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">CSS</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">TypeScript</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">React</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Android Studio</p>
+                </div>
+                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-borde-oscuro px-4 hover:bg-color-primario transition-colors">
+                  <p class="text-texto-claro text-sm font-medium leading-normal">GitHub</p>
+                </div>
+              </div>
+            </section>
+
+            <hr class="border-borde-oscuro my-8" />
+
+            <section id="contacto" class="px-4 pb-3 pt-5 sm:px-0">
+              <h2 class="text-texto-claro text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Contacto</h2>
+              <p class="text-texto-claro text-base font-normal leading-relaxed mb-6">
+                No dudes en contactarme en Jm.jimenez@Duocuc.cl o conectarte conmigo en mis redes sociales.
+              </p>
+              <div class="@container">
+                <div class="gap-4 px-4 flex flex-wrap justify-center sm:justify-start">
+                  <a
+                    href="https://www.linkedin.com/in/jose-miguel-jimenez-flores-b67898251/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col items-center gap-2 bg-borde-oscuro py-2.5 text-center w-24 rounded-lg hover:bg-color-primario transition-colors"
+                    aria-label="Perfil de LinkedIn"
+                  >
+                    <div class="rounded-full bg-fondo-principal p-2.5">
+                      <div class="text-texto-claro" data-icon="LinkedinLogo" data-size="20px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-texto-claro text-sm font-medium leading-normal">LinkedIn</p>
+                  </a>
+                  <a
+                  href="mailto:jm.jimenez@duocuc.cl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex flex-col items-center gap-2 bg-borde-oscuro py-2.5 text-center w-24 rounded-lg hover:bg-color-primario transition-colors"
+                  aria-label="Enviar correo a j.jimenez@duocuc.cl"
+                >
+                  <div class="rounded-full bg-fondo-principal p-2.5">
+                    <div class="text-texto-claro" data-icon="EnvelopeSimple" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM128,128.89,52.89,64H203.11ZM40,192V68.89L123.11,136h9.78L216,68.89V192Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-texto-claro text-sm font-medium leading-normal">Correo</p>
+                </a>
+                  <a
+                    href="https://github.com/JoseJimenez0607"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex flex-col items-center gap-2 bg-borde-oscuro py-2.5 text-center w-24 rounded-lg hover:bg-color-primario transition-colors"
+                    aria-label="Perfil de GitHub"
+                  >
+                    <div class="rounded-full bg-fondo-principal p-2.5">
+                      <div class="text-texto-claro" data-icon="GithubLogo" data-size="20px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="text-texto-claro text-sm font-medium leading-normal">GitHub</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <footer class="flex justify-center mt-10">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <div class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <p class="text-texto-secundario text-base font-normal leading-normal">
+                © 2025 Jose Jimenez. Todos los derechos reservados.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
